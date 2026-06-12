@@ -5,14 +5,16 @@
         numero1 = txtNumero1.Text
         numero2 = txtNumero2.Text
         lblMostrar.Text = "El número mayor es: " & DeterminarMayor(numero1, numero2)
+        lblVariableModificada.Text = "El valor de numero1 es: " & numero1
     End Sub
-    Private Function DeterminarMayor(ByVal num1 As Integer, ByVal num2 As Integer) As Integer
+    Private Function DeterminarMayor(ByRef num1 As Integer, ByVal num2 As Integer) As Integer
         Dim mayor As Integer
         If num1 > num2 Then
             mayor = num1
         Else
             mayor = num2
         End If
+        num1 = 100
         Return mayor
     End Function
 End Class

@@ -26,6 +26,7 @@ Partial Class Form1
         txtNumero2 = New TextBox()
         lblMostrar = New Label()
         cmdEjecutar = New Button()
+        lblVariableModificada = New Label()
         SuspendLayout()
         ' 
         ' txtNumero1
@@ -60,11 +61,21 @@ Partial Class Form1
         cmdEjecutar.Text = "Ejecutar"
         cmdEjecutar.UseVisualStyleBackColor = True
         ' 
+        ' lblVariableModificada
+        ' 
+        lblVariableModificada.AutoSize = True
+        lblVariableModificada.Location = New Point(474, 119)
+        lblVariableModificada.Name = "lblVariableModificada"
+        lblVariableModificada.Size = New Size(86, 20)
+        lblVariableModificada.TabIndex = 4
+        lblVariableModificada.Text = "modificado"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(lblVariableModificada)
         Controls.Add(cmdEjecutar)
         Controls.Add(lblMostrar)
         Controls.Add(txtNumero2)
@@ -79,5 +90,6 @@ Partial Class Form1
     Friend WithEvents txtNumero2 As TextBox
     Friend WithEvents lblMostrar As Label
     Friend WithEvents cmdEjecutar As Button
+    Friend WithEvents lblVariableModificada As Label
 
 End Class
